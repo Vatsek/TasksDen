@@ -3,11 +3,13 @@
 
 string password = "qwerty";
 int count = 0;
+int attempts = 3;
+
 Console.Write("Введите пароль ");
 string secretMessage = "Угадал";
 string inputPassword = "0";
 
-while (count < 3)
+while (count < attempts)
 {
     inputPassword = Console.ReadLine();
     if (inputPassword == password)

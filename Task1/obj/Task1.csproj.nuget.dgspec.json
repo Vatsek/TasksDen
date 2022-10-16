@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/Users/pavelvatsek/Desktop/TasksDen/TasksDen/Task1/Task1.csproj": {}
+    "/Users/pavelvatsek/Desktop/Gb/TasksDen/Task1/Task1.csproj": {}
   },
   "projects": {
-    "/Users/pavelvatsek/Desktop/TasksDen/TasksDen/Task1/Task1.csproj": {
+    "/Users/pavelvatsek/Desktop/Gb/TasksDen/Task1/Task1.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/pavelvatsek/Desktop/TasksDen/TasksDen/Task1/Task1.csproj",
+        "projectUniqueName": "/Users/pavelvatsek/Desktop/Gb/TasksDen/Task1/Task1.csproj",
         "projectName": "Task1",
-        "projectPath": "/Users/pavelvatsek/Desktop/TasksDen/TasksDen/Task1/Task1.csproj",
+        "projectPath": "/Users/pavelvatsek/Desktop/Gb/TasksDen/Task1/Task1.csproj",
         "packagesPath": "/Users/pavelvatsek/.nuget/packages/",
-        "outputPath": "/Users/pavelvatsek/Desktop/TasksDen/TasksDen/Task1/obj/",
+        "outputPath": "/Users/pavelvatsek/Desktop/Gb/TasksDen/Task1/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/pavelvatsek/.nuget/NuGet/NuGet.Config"
