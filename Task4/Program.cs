@@ -9,38 +9,38 @@ WriteName – вывести имя после ввода пароля
 string inpExit = "Exit";
 string inpHelp = "Help";
 string inpSetPassword = "SetPassword";
-string inputSetName = "SetName";
-string inputWriteName = "WriteName";
+string inpSetName = "SetName";
+string inpWriteName = "WriteName";
 string command = "";
 string userName = "";
 string userPassword = "";
 string usrPasCheck1 = "";
 string usrPasCheck2 = "";
 
-Console.WriteLine("Для справки наберите Help");
-while (command != inpExit) // выход из программы
+
+while (command != inpExit)
 {
         command = Console.ReadLine();
-    if (command == inpHelp)
+    if (TolowBool(command, inpHelp))
     {
         Console.WriteLine($"{inpExit} – выход");
-        Console.WriteLine($"{inputSetName} – Установить имя");
+        Console.WriteLine($"{inpSetName} – Установить имя");
         Console.WriteLine($"{inpSetPassword} – Установить пароль");
-        Console.WriteLine($"{inputWriteName} – Вывести имя, после ввода пароля");
+        Console.WriteLine($"{inpWriteName} – Вывести имя, после ввода пароля");
     }
-    else if (command == inputSetName)
+    else if (TolowBool(command, inpSetName))
     {
         Console.WriteLine("Введите имя: ");
         userName = Console.ReadLine();
         Console.WriteLine("Имя сохранено");       
     }
-    else if (command == inpSetPassword)
+    else if (TolowBool(command, inpSetPassword))
     {
         Console.WriteLine("Введите пароль");
         usrPasCheck1 = Console.ReadLine();
         Console.WriteLine("Подтвердите пароль");
         usrPasCheck2 = Console.ReadLine();
-        if (usrPasCheck1 == usrPasCheck2)
+        if (TolowBool(usrPasCheck1, usrPasCheck2))
         {
             Console.WriteLine("Пароль успешно сохранён.");
             userPassword = usrPasCheck1;
@@ -50,7 +50,7 @@ while (command != inpExit) // выход из программы
             Console.WriteLine("Введённые пароли не совпадают");
         }
     }
-    else if (command == inputWriteName)
+    else if (TolowBool(command, inpWriteName))
     {
         Console.WriteLine("Введите пароль");
         usrPasCheck2 = Console.ReadLine();
@@ -68,4 +68,10 @@ while (command != inpExit) // выход из программы
         Console.WriteLine("Команда не найдена. Для просмотра списка команд введите help");
     }
 
+}
+
+bool TolowBool(string arg1, string arg2)
+{
+    bool result = arg1.ToLower() == arg2.ToLower();
+    return result;
 }
