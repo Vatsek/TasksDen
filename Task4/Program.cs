@@ -17,6 +17,7 @@ string userName = "";
 string userPassword = "";
 string usrPasCheck1 = "";
 string usrPasCheck2 = "";
+string userChangePassword = "";
 
 Console.WriteLine("Готово к работе");
 while (command != inpExitLow)
@@ -37,10 +38,39 @@ while (command != inpExitLow)
     }
     else if (TolowBool(command, inpSetPassword))
     {
-        Console.WriteLine("Введите пароль");
-        usrPasCheck1 = Console.ReadLine();
-        Console.WriteLine("Подтвердите пароль");
-        usrPasCheck2 = Console.ReadLine();
+        if (userPassword != "")
+        {
+            Console.WriteLine("Для смены пароля введите старый пароль");
+            userChangePassword = Console.ReadLine();
+            if (TolowBool (userPassword, userChangePassword))
+            {
+                Console.WriteLine("Введите новый пароль");
+                usrPasCheck1 = Console.ReadLine();
+                Console.WriteLine("Подтвердите пароль");
+                usrPasCheck2 = Console.ReadLine();
+                if (TolowBool(usrPasCheck1, usrPasCheck2))
+                {
+                     Console.WriteLine("Пароль успешно сохранён.");
+                     userPassword = usrPasCheck1;
+                }
+                else
+                {
+                     Console.WriteLine("Введённые пароли не совпадают. Пароль не сохранён");
+                }
+            }    
+            else
+            {
+                Console.WriteLine("Введённые пароли не совпадают. Пароль не сохранён");
+                
+            }
+        }   
+        else 
+        {
+            Console.WriteLine("Введите пароль");
+            usrPasCheck1 = Console.ReadLine();
+            Console.WriteLine("Подтвердите пароль");
+            usrPasCheck2 = Console.ReadLine();
+        }
         if (TolowBool(usrPasCheck1, usrPasCheck2))
         {
             Console.WriteLine("Пароль успешно сохранён.");
