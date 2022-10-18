@@ -50,12 +50,7 @@ while (command != inpExitLow)
                 usrPasCheck2 = Console.ReadLine();
                 if (TolowBool(usrPasCheck1, usrPasCheck2))
                 {
-                     Console.WriteLine("Пароль успешно сохранён.");
-                     userPassword = usrPasCheck1;
-                }
-                else
-                {
-                     Console.WriteLine("Введённые пароли не совпадают. Пароль не сохранён");
+                    userPassword = usrPasCheck1;
                 }
             }    
             else
@@ -105,7 +100,6 @@ while (command != inpExitLow)
     }
 
 }
-
 bool TolowBool(string arg1, string arg2)
 {
     bool result = arg1.ToLower() == arg2.ToLower();
