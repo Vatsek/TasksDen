@@ -7,6 +7,7 @@ WriteName – вывести имя после ввода пароля
 */
 
 string inpExit = "Exit";
+string inpExitLow = inpExit.ToLower();
 string inpHelp = "Help";
 string inpSetPassword = "SetPassword";
 string inpSetName = "SetName";
@@ -17,8 +18,8 @@ string userPassword = "";
 string usrPasCheck1 = "";
 string usrPasCheck2 = "";
 
-
-while (command != inpExit)
+Console.WriteLine("Готово к работе");
+while (command != inpExitLow)
 {
         command = Console.ReadLine();
     if (TolowBool(command, inpHelp))
@@ -47,7 +48,7 @@ while (command != inpExit)
         }
         else
         {
-            Console.WriteLine("Введённые пароли не совпадают");
+            Console.WriteLine("Введённые пароли не совпадают. Пароль не сохранён");
         }
     }
     else if (TolowBool(command, inpWriteName))
@@ -63,6 +64,11 @@ while (command != inpExit)
             Console.WriteLine("Пароль не верный!"); 
         }
     }
+    else if (TolowBool(command, inpExitLow))
+    {
+        return;
+    }
+    
     else
     {
         Console.WriteLine("Команда не найдена. Для просмотра списка команд введите help");
