@@ -23,32 +23,32 @@ Console.WriteLine("Готово к работе");
 while (command != inpExitLow)
 {
         command = Console.ReadLine();
-    if (TolowBool(command, inpHelp))
+    if (Bool(ToLower(command), ToLower(inpHelp)))
     {
         Console.WriteLine($"{inpExit} – выход");
         Console.WriteLine($"{inpSetName} – Установить имя");
         Console.WriteLine($"{inpSetPassword} – Установить пароль");
         Console.WriteLine($"{inpWriteName} – Вывести имя, после ввода пароля");
     }
-    else if (TolowBool(command, inpSetName))
+    else if (Bool(ToLower(command), ToLower(inpSetName)))
     {
         Console.WriteLine("Введите имя: ");
         userName = Console.ReadLine();
         Console.WriteLine("Имя сохранено");       
     }
-    else if (TolowBool(command, inpSetPassword))
+    else if (Bool(ToLower(command), ToLower(inpSetPassword)))
     {
         if (userPassword != "")
         {
             Console.WriteLine("Для смены пароля введите старый пароль");
             userChangePassword = Console.ReadLine();
-            if (TolowBool (userPassword, userChangePassword))
+            if (Bool (userPassword, userChangePassword))
             {
                 Console.WriteLine("Введите новый пароль");
                 usrPasCheck1 = Console.ReadLine();
                 Console.WriteLine("Подтвердите пароль");
                 usrPasCheck2 = Console.ReadLine();
-                if (TolowBool(usrPasCheck1, usrPasCheck2))
+                if (Bool(usrPasCheck1, usrPasCheck2))
                 {
                     userPassword = usrPasCheck1;
                 }
@@ -66,7 +66,7 @@ while (command != inpExitLow)
             Console.WriteLine("Подтвердите пароль");
             usrPasCheck2 = Console.ReadLine();
         }
-        if (TolowBool(usrPasCheck1, usrPasCheck2))
+        if (Bool(usrPasCheck1, usrPasCheck2))
         {
             Console.WriteLine("Пароль успешно сохранён.");
             userPassword = usrPasCheck1;
@@ -76,7 +76,7 @@ while (command != inpExitLow)
             Console.WriteLine("Введённые пароли не совпадают. Пароль не сохранён");
         }
     }
-    else if (TolowBool(command, inpWriteName))
+    else if (Bool(ToLower(command), ToLower(inpWriteName)))
     {
         Console.WriteLine("Введите пароль");
         usrPasCheck2 = Console.ReadLine();
@@ -89,7 +89,7 @@ while (command != inpExitLow)
             Console.WriteLine("Пароль не верный!"); 
         }
     }
-    else if (TolowBool(command, inpExitLow))
+    else if (Bool(ToLower(command), ToLower(inpExitLow)))
     {
         return;
     }
@@ -100,8 +100,14 @@ while (command != inpExitLow)
     }
 
 }
-bool TolowBool(string arg1, string arg2)
+bool Bool(string arg1, string arg2)
 {
-    bool result = arg1.ToLower() == arg2.ToLower();
+    bool result = arg1 == arg2;
     return result;
+}
+
+string ToLower(string inpText)
+{
+    string outpText = inpText.ToLower();
+    return outpText;
 }
