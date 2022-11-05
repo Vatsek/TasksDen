@@ -1,0 +1,15 @@
+/Users/pavelvatsek/Desktop/Gb/TasksDen/Task5_verDen/bin/Debug/net6.0/Task5_verDen
+/Users/pavelvatsek/Desktop/Gb/TasksDen/Task5_verDen/bin/Debug/net6.0/Task5_verDen.deps.json
+/Users/pavelvatsek/Desktop/Gb/TasksDen/Task5_verDen/bin/Debug/net6.0/Task5_verDen.runtimeconfig.json
+/Users/pavelvatsek/Desktop/Gb/TasksDen/Task5_verDen/bin/Debug/net6.0/Task5_verDen.dll
+/Users/pavelvatsek/Desktop/Gb/TasksDen/Task5_verDen/bin/Debug/net6.0/Task5_verDen.pdb
+/Users/pavelvatsek/Desktop/Gb/TasksDen/Task5_verDen/obj/Debug/net6.0/Task5_verDen.csproj.AssemblyReference.cache
+/Users/pavelvatsek/Desktop/Gb/TasksDen/Task5_verDen/obj/Debug/net6.0/Task5_verDen.GeneratedMSBuildEditorConfig.editorconfig
+/Users/pavelvatsek/Desktop/Gb/TasksDen/Task5_verDen/obj/Debug/net6.0/Task5_verDen.AssemblyInfoInputs.cache
+/Users/pavelvatsek/Desktop/Gb/TasksDen/Task5_verDen/obj/Debug/net6.0/Task5_verDen.AssemblyInfo.cs
+/Users/pavelvatsek/Desktop/Gb/TasksDen/Task5_verDen/obj/Debug/net6.0/Task5_verDen.csproj.CoreCompileInputs.cache
+/Users/pavelvatsek/Desktop/Gb/TasksDen/Task5_verDen/obj/Debug/net6.0/Task5_verDen.dll
+/Users/pavelvatsek/Desktop/Gb/TasksDen/Task5_verDen/obj/Debug/net6.0/refint/Task5_verDen.dll
+/Users/pavelvatsek/Desktop/Gb/TasksDen/Task5_verDen/obj/Debug/net6.0/Task5_verDen.pdb
+/Users/pavelvatsek/Desktop/Gb/TasksDen/Task5_verDen/obj/Debug/net6.0/Task5_verDen.genruntimeconfig.cache
+/Users/pavelvatsek/Desktop/Gb/TasksDen/Task5_verDen/obj/Debug/net6.0/ref/Task5_verDen.dll
